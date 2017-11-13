@@ -1,0 +1,110 @@
+.page
+{
+	/* height: calc(100% - 100px); */
+	//top: 100px;
+    //position: relative;
+    padding-top:5vh;
+	background-color: white;
+}
+.line
+{
+	position: relative;
+	margin: 0 auto;
+	//margin-top: 10px;
+	width: 80%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+	color: black;
+
+}
+.container
+{
+	display: flex;
+	position: relative;
+	margin: 5vh auto;
+	width: 80%;
+	height: 80%;
+	background-color: $peach;
+	//border-radius: 10px;
+}
+.info
+{
+	width: 30%;
+	height: 100%;
+	background-color: rgba(0,113,179,1);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+}
+.content
+{
+	position: relative;
+	width: 60%;
+	margin: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+    margin-top:7%;
+    //padding:10%;
+	background-color: $lighterPeach;
+	//border-bottom-right-radius:20px; 
+	//border-bottom-left-radius:20px;
+	height: 80%;
+}
+.topLine
+{
+	position: absolute;
+	background-color: $peach;
+	height: 50px;
+	width: 100%;
+	top: -50px;
+
+	display: flex;
+	justify-content: center;
+}
+.itemTop
+{
+	position: relative;
+    width: calc(100%/3);
+    border:1px solid gray;
+	margin:0 auto;
+	height: 100%;
+	background-color: white;
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size:20px;
+	background-color: $peach;
+}
+.itemTopActive
+{
+    z-index: 1;
+    background-color:$lighterPeach;
+    color:black;
+    border-bottom:none;
+}
+.articleBtn
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,93,149,1);
+	height: 100%;
+	width: 200px;
+	float: right;
+
+}
+
+//SERIES
+
+#seriesSection{
+    .content{
+        width:100%;
+    }
+}

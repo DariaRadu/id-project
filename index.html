@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nordea Bank</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+	<div id="topBar">
+		
+		<div><img src="logo.png"></div>
+
+		<div>E-market</div>
+		<input id="mainSearch" class="searchBar" type="text" oninput="" placeholder="Search...">
+
+		<div>Settings</div>
+
+
+	</div>
+
+
+
+	<div class="page">
+		<div class="line">Welcome, Terry</div>
+		<div class="line">Dashboard currently showing :
+
+		</div>
+		
+		<div id="articleSection" class="container">
+
+			<div class="info">
+				<div>
+					<p>Change Article</p>
+					<input id="articleSearch" class="searchBar" type="text" oninput="" placeholder="Search Article...">
+				</div>
+				<p>Article Name</p>
+				<p>Author</p>
+				<p>Summary</p>
+				<p>Language</p>
+				<p>Keywords</p>
+				<p>Series</p>
+			</div>
+			<div class="content">
+
+				<div class="topLine">
+				 	<div id="dayChart" class="itemTop itemTopActive cursor-pointer">Day</div>
+					<div id="weekChart" class="itemTop cursor-pointer">Week</div>
+					<div id="monthChart" class="itemTop cursor-pointer">Month</div>
+				</div>
+				
+				<canvas id="clickRateChart"></canvas>
+				
+			</div>
+		</div>
+		
+		<div id="seriesSection" class="container">
+			<div class='content'>
+				<div class="topLine">
+					<div id="dayChart" class="itemTop itemTopActive cursor-pointer">Day</div>
+					<div id="weekChart" class="itemTop cursor-pointer">Week</div>
+					<div id="monthChart" class="itemTop cursor-pointer">Month</div>
+				</div>
+								
+				<canvas id="seriesChart"></canvas>
+								
+				</div>
+			</div>
+
+
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
