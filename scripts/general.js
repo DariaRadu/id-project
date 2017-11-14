@@ -71,3 +71,7 @@ function iconCancel(e)
 	e.target.addEventListener("click",iconClick);
 	e.target.removeEventListener("click",iconCancel);
 }
+closeIcon.addEventListener("click",function()
+{
+	document.getElementsByClassName("backActive")[0].classList.remove("backActive");
+});
