@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   font-family: Arial,Helvetica,sans-serif;
   background-color: #eee; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      font-size: 20px; } }
 
 h2 {
   padding-top: 10vh; }
@@ -58,6 +61,12 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .page {
+      padding: 20px; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .page {
+      padding: 50px; } }
 
 .pageActive {
   display: flex; }
@@ -110,7 +119,6 @@ h2 {
 
 .photoContainer {
   width: 200px;
-  height: 200px;
   box-sizing: border-box;
   padding: 5vh; }
   .photoContainer img {
@@ -207,6 +215,9 @@ input:checked + .slider:before {
   align-items: center;
   flex-direction: column;
   font-size: 20px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .info {
+      padding: 20px; } }
 
 .container {
   display: flex;
@@ -227,6 +238,9 @@ input:checked + .slider:before {
   margin-bottom: calc(7% - 50px);
   background-color: #fef6f2;
   height: 80%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .content {
+      margin-top: 20%; } }
 
 .topLine {
   position: absolute;
