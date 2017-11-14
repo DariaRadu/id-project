@@ -213,6 +213,43 @@ tempSec3.addEventListener('click', function()
     seriesChart.update();
 });
 
+//AUTHOR CHART
+var ctx3= document.getElementById('authorChart').getContext('2d');
+var authorChart = new Chart(ctx3, 
+{
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        datasets: 
+        [{
+            label: "Click Rate",
+            borderColor: '#004977',
+            backgroundColor:'#004977',
+            /* borderColor: 'rgb(255, 99, 132)', */
+            fill:0,
+            lineTension:0.3,
+            data: [255, 245, 235, 257, 254, 260, 245]
+        }]
+    },
+
+    // Configuration options go here
+    options: 
+    {
+        scales : 
+        {
+            xAxes : 
+            [{
+                gridLines : 
+                {
+                    display : false
+                }
+            }]
+        }
+    }
+});
 //NEW SCRIPT
 var pages=document.getElementsByClassName("page");
 var currentPage=0;
