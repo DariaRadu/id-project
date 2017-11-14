@@ -5,29 +5,43 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-<body>
+<body >
 
-	<div id="topBar">
+	
+
+
+	<div class="page ">
+
+
+
+		<form id="loginForm">
+			<div class="lbl">Username :</div><input type="text" name="user">
+			<div class="lbl">Password :</div><input type="password" name="pass">
+			<div id="btnLogin" class="btn">Login</div>
+		</form>
+
+	</div>
+
+	<div id="testerz" class="page pageActive">
+
+
+
+		<div id="topBar">
 		
 		<div><img src="logo.png"></div>
 
 		<div>E-market</div>
 		<input id="mainSearch" class="searchBar" type="text" oninput="" placeholder="Search...">
 
-		<div>Settings</div>
+		<div id="btnSettings">Settings</div>
 
-
-	</div>
-
-
-	<div class="page">
-	</div>
-
-	<div class="page pageActive">
-		<div class="line">Welcome, Terry</div>
-		<div class="line">Dashboard currently showing :
 
 		</div>
+		<div class="line">Welcome, Terry</div>
+		<!--<div class="line">Dashboard currently showing :
+
+		</div>
+		-->
 		
 		<div id="articleSection" class="container">
 
@@ -46,9 +60,9 @@
 			<div class="content">
 
 				<div class="topLine">
-				 	<div id="dayChart" class="itemTop itemTopActive cursor-pointer">Day</div>
-					<div id="weekChart" class="itemTop cursor-pointer">Week</div>
-					<div id="monthChart" class="itemTop cursor-pointer">Month</div>
+				 	<div class="itemTop itemTopActive">Day</div>
+					<div class="itemTop">Week</div>
+					<div class="itemTop">Month</div>
 				</div>
 				
 				<canvas id="clickRateChart" ></canvas>
@@ -62,9 +76,9 @@
 
 				<div class="topLine">
 
-					<div id="dayChart" class="itemTop itemTopActive cursor-pointer">Day</div>
-					<div id="weekChart" class="itemTop cursor-pointer">Week</div>
-					<div id="monthChart" class="itemTop cursor-pointer">Month</div>
+					<div class="itemTop itemTopActive">Day</div>
+					<div class="itemTop">Week</div>
+					<div class="itemTop">Month</div>
 
 				</div>
 								
@@ -76,8 +90,14 @@
 
 
 	</div>
+	<div class="page">
+
+		
+		
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/general.js"></script>
 </body>
 </html>
