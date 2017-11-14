@@ -25,18 +25,6 @@ function login()
 btnSettings.addEventListener("click",openSettings);
 function openSettings()
 {	
-	var backA=document.createElement("DIV");
-	backA.classList.add("back");
-	testerz.appendChild(backA);
-	createSettingsPage(backA);
-	
-
-}
-function createSettingsPage(parent)
-{
-	var container=document.createElement("DIV");
-	container.classList.add("settingsContainer");
-	parent.appendChild(container);
-	var photo=document.createElement("DIV");
+	document.getElementsByClassName("back")[0].classList.add("backActive");
 
 }
