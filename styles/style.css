@@ -416,6 +416,96 @@ input:checked + .slider:before {
     align-items: center;
     background-color:#004977;
   }
-    
+  #box-searchbar{
+      display: flex ;
+    }
+    #form-searchbar{
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 1em;/*insert var*/
+      padding-right: 15px;
+      align-items: center;
+    }
+    #form-searchbar input{
+      background-color: white;
+      padding: 5px 5px 5px 15px;
+      border: 0;
+      border-radius: 1em;/*insert var*/
+      width: 100%;
+    }
+    #form-searchbar input:focus{
+      outline: none;
+    }
+
+    #search-box{
+      display: none;
+      position: absolute;
+      top:30px;
+      left: 15px;
+      width: 300px;
+      height: 300px;
+      flex-direction: column;
+      background-color: white;
+      padding:15px;
+      box-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+      overflow-y: scroll;
+      border-radius: 0.125em;
+      border-top: 0.5px lightgrey solid;
+      
+    }
+    #search-box::-webkit-scrollbar{
+        width: 5px;
+        background-color: #eee;
+
+      }
+
+    #search-box::-webkit-scrollbar-thumb{
+        width: 5px;
+        background-color: rgb(0,0,160); /* VAR NORDEA BLUE*/
+        border-radius: 1em;
+
+      }
+    #search-box ul{
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      border-top: 0.5px solid #222;
+    }
+    #search-box ul li{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      height: 50px;
+      background-color: #fff;
+      text-decoration: none;
+      padding: 15px;
+    }
+    #search-box ul li:hover{
+      background-color: #eee;
+    }
+    .result-label{
+      background-color: blue;
+      color: white;
+      padding: 5px;
+      border-radius: 3em;
+      width: 3em;
+      line-height: 3em;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      font-size: 1em;
+    }
+    .result-text{
+      display: flex;
+      flex-direction: column;
+      margin-left: 25px;
+    }
+    .result-text a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+
 
 /*# sourceMappingURL=style.css.map */

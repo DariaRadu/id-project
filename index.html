@@ -129,8 +129,22 @@
 
 			<div>E-market</div>
 
-			<input id="mainSearch" class="searchBar" type="text" oninput="" placeholder="Search...">
+			<div id="box-searchbar">
+		
+				<form id="form-searchbar">
+					<input  type="text" name="search-navbar" placeholder="search" oninput="search(this.value)">
+					<i class="fa fa-search" aria-hidden="true"></i>
 
+
+				</form>
+
+				<div id="search-box" >
+					Search result for <b><span id="textSpan"></span></b>:
+					<ul id="search-list">
+					</ul>
+				</div>
+
+			</div>
 			<div id="btnSettings">Settings</div>
 
 
@@ -147,7 +161,22 @@
 			<div class="info">
 				<div>
 					<p>Change Article</p>
-					<input id="articleSearch" class="searchBar" type="text" oninput="" placeholder="Search Article...">
+					<div id="box-searchbar">
+		
+		<form id="form-searchbar">
+			<input  type="text" name="search-navbar" placeholder="search" oninput="search(this.value)">
+			<i class="fa fa-search" aria-hidden="true"></i>
+
+
+		</form>
+
+		<div id="search-box" >
+			Search result for <b><span id="textSpan"></span></b>:
+			<ul id="search-list">
+			</ul>
+		</div>
+
+	</div>
 				</div>
 				<p>Article Name</p>
 				<p>Author</p>
@@ -194,9 +223,11 @@
 		
 		
 	</div>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="https://use.fontawesome.com/4f0f6d61b2.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript" src="scripts/general.js"></script>
+	<script type="text/javascript" src="scripts/nav.js"></script>
 </body>
 </html>
