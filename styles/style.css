@@ -1,3 +1,4 @@
+/* -------------------- RESPONSIVE MIXINS ------------------------- */
 * {
   box-sizing: border-box; }
 
@@ -100,6 +101,9 @@ body {
   padding: 20px; }
   .boxLine div {
     margin-right: 20px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .boxLine {
+      padding: 25px 30px; } }
 
 .photoContainer {
   width: 200px;
@@ -170,7 +174,8 @@ input:checked + .slider:before {
   display: flex;
   width: 100%;
   height: 20%;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
 
 .topContainer {
   display: flex;
@@ -292,6 +297,8 @@ input:checked + .slider:before {
   height: 60%;
   background-color: #FDECE4;
   border-radius: 0.125em; }
+  .settingsContainer .fa {
+    cursor: pointer; }
 
 #loginForm {
   display: flex;
